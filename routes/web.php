@@ -31,3 +31,5 @@ Route::get('/admin/logout', [AdminController::class, 'AdminLogout'])->name('admi
 Route::get('/admin/forget_password', [AdminController::class, 'AdminForgetPassword'])->name('admin.forget_password');
 
 Route::post('/admin/password_submit', [AdminController::class, 'AdminPasswordSubmit'])->name('admin.password_submit');
+
+Route::get('/admin/reset-password/{token}/{email}', [AdminController::class, 'AdminResetPassword']);
