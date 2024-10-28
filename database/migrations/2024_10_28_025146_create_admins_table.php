@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->string('token')->nullable();
             $table->string('photo')->nullable();
             $table->string('phone')->nullable();
-            $table->string('adress')->nullable();
+            $table->string('address')->nullable();
             $table->string('role')->default('admin');
             $table->string('status')->default('1');
             $table->rememberToken();
