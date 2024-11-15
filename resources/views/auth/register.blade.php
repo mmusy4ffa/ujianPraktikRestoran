@@ -65,7 +65,7 @@
                               </div>
                               <button type="submit" href="{{route('register')}}" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign Up</button>
                               <div class="text-center pt-3">
-                                 Don’t have an account? <a class="font-weight-bold" href="register.html">Sign Up</a>
+                                 Already have an account? <a class="font-weight-bold" href="{{route('login')}}">Sign In</a>
                               </div>
                            </form>
 
