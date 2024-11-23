@@ -100,9 +100,9 @@ Route::middleware('client')->group(function () {
         Route::get('/all/menu', 'AllMenu')->name('all.menu');
         Route::get('/add/menu', 'AddMenu')->name('add.menu');
         Route::post('/store/menu', 'StoreMenu')->name('menu.store');
-        Route::get('/edit/city/{id}', 'EditCity');
-        Route::post('/update/city', 'UpdateCity')->name('city.update');
-        Route::get('/delete/city/{id}', 'DeleteCity')->name('delete.city');
+        Route::get('/edit/menu/{id}', 'EditMenu')->name('edit.menu');
+        Route::post('/update/menu', 'UpdateMenu')->name('menu.update');
+        Route::get('/delete/menu/{id}', 'DeleteMenu')->name('delete.menu');
     });
 
 });
