@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Http\Request;
 use App\Models\Menu;
+use App\Models\Product;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 
@@ -122,4 +123,13 @@ class RestaurantController extends Controller
     }
     //End Method
 
+
+
+    ///////////// All Product Method Start
+    public function AllProduct()
+    {
+        $product = Product::latest()->get();
+        return view('client.backend.product.all_product', compact('product'));
+    }
+    // End Method
 }
