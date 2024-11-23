@@ -9,7 +9,7 @@
                     <h4 class="mb-sm-0 font-size-18">All Product</h4>
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <a href="{{ route('add.menu') }}" class="btn btn-primary waves-effect waves-light">Add Product</a>
+                            <a href="{{ route('add.product') }}" class="btn btn-primary waves-effect waves-light">Add Product</a>
                         </ol>
                     </div>
                 </div>
