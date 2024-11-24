@@ -24,7 +24,7 @@ return new class extends Migration {
             $table->string('discount_price')->nullable();
             $table->string('image')->nullable();
             $table->string('client_id')->nullable();
-            $table->string('most_popular')->nullable();
+            $table->string('most_populer')->nullable();
             $table->string('best_seller')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
