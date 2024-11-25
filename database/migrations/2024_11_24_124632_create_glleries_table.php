@@ -10,11 +10,10 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('menus', function (Blueprint $table) {
+        Schema::create('gllreys', function (Blueprint $table) {
             $table->id();
-            $table->string('menu_name');
-            $table->string('image')->nullable();
-            $table->unsignedBigInteger('client_id')->nullable();
+            $table->string('client_id')->nullable();
+            $table->string('gallery_img')->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +23,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('menus');
+        Schema::dropIfExists('gllreys');
     }
 };
